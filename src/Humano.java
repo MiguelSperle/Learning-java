@@ -1,15 +1,19 @@
 public class Humano extends Ser {
 
-    String lastName;
-    String cpf;
-    public Humano(String name, int age, int bornYear, String lastName, String cpf){
-        super(name, age, bornYear); // Passsando para o constructor da SUPER CLASS (SER)
+    private String lastName; // Atributo privado ( 'boa pratica' )
+    private String cpf; // Atributo privado ( 'boa pratica' )
+    public Humano(String name, int age, int bornYear, String lastName, String cpf){ //  Passando para o constructor da class Humanao
+        super(name, age, bornYear); // Passando para o constructor da SUPER CLASS (SER)
         this.lastName = lastName;
         this.cpf = cpf;
     }
 
     @Override
     public String informacao(){
-        return "Nome: " + this.name + " Sobrenome: " + this.lastName + " Idade: " + this.age + " Nasceu: " + this.bornYear + " CPF: " + this.cpf;
+        int valueBornYear = getBornYear(); // Pegando pelo getter o bornYear
+        int valueAge = getAge(); // Pegando pelo getter a age
+        String valueName = getName(); // Pegando pelo getter o name
+
+        return "Nome: " + valueName + " Sobrenome: " + this.lastName + " Idade: " + valueAge + " Nasceu: " + valueBornYear + " CPF: " + this.cpf;
     }
 }

@@ -1,5 +1,19 @@
 public class Calculator {
-    public int sumNumbers(int number1, int number2){
-        return number1 + number2;
+    private int quantity;
+
+    public void setQuantity(int quantity){
+        this.quantity = quantity;
+    }
+
+    public int getQuantity(){ // getter, pegando esse atributo
+        return quantity;
+    }
+
+    public void setCalculatorQuantitySonByMother(){ // setter, atribuindo um valor ao atributo
+        this.quantity = quantity / 10;
+    }
+
+    public String getCalculatorQuantitySonByMonther(){
+        return "Sabendo que temos 10 mães, cada mãe tem " + quantity + " filhos";
     }
 }
