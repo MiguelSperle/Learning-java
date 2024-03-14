@@ -1,7 +1,7 @@
 public class Calculator {
     private int quantity;
 
-    public void setQuantity(int quantity){
+    public Calculator(int quantity){ // Constructor da class Calculator
         this.quantity = quantity;
     }
 

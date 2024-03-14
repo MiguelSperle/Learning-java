@@ -2,13 +2,11 @@ public class Main {
     private static String name;
 
     public static void main(String[] args) {
-         Ser myHumano = new Humano("Miguel", 17, 2007, "Sperle", "123-456-789");
-         Ser myAnimal = new Animal("Apollo", 4, 2021, "mamifero");
-         Calculator myCalculato = new Calculator();
+         Humano myHumano = new Humano("Miguel", 17, 2007, "Sperle", "123-456-789");
+         Animal myAnimal = new Animal("Apollo", 4, 2021, "mamifero");
+         Calculator myCalculato = new Calculator(30);
 
-        myCalculato.setQuantity(30);
         myCalculato.setCalculatorQuantitySonByMother();
-
         System.out.println(myCalculato.getCalculatorQuantitySonByMonther());
 
          System.out.println(myHumano.informacao());

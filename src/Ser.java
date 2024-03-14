@@ -1,4 +1,4 @@
-public class Ser {
+public abstract class Ser {
    private String name; // Atributo privado ( 'boa pratica' )
    private int age; // Atributo privado ( 'boa pratica' )
    private int bornYear; // Atributo privado ( 'boa pratica' )
@@ -10,10 +10,7 @@ public class Ser {
         this.bornYear = bornYear;
     }
 
-    public String informacao(){
-        // Polimorfismo, objetos de classes diferente vao responder essa mensagem de forma diferente( vão mostrar a info aqui de formas diferentes )
-        return null;
-    }
+    public abstract String informacao(); // método abstract, passa a ser obrigatorio passar esse método em cada subclasse que herda essa classe abstrata
 
     public int getBornYear(){ // Pelo getter, estou pegando esse atributo
         return bornYear;
