@@ -6,7 +6,7 @@ public class Main {
          Animal myAnimal = new Animal("Apollo", 4, 2021, "mamifero");
          Calculator myCalculato = new Calculator(30);
 
-        myCalculato.setCalculatorQuantitySonByMother();
+        myCalculato.calculatorQuantitySonByMother();
         System.out.println(myCalculato.getCalculatorQuantitySonByMonther());
 
          System.out.println(myHumano.informacao());
@@ -22,6 +22,6 @@ public class Main {
     }
 
     static String getName(){ // getter statico ( função inicializadora statica, só aceita método e atributo statico )
-        return name;
+        return Main.name;
     }
 }

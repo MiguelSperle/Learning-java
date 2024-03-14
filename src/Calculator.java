@@ -6,14 +6,14 @@ public class Calculator {
     }
 
     public int getQuantity(){ // getter, pegando esse atributo
-        return quantity;
+        return this.quantity;
     }
 
-    public void setCalculatorQuantitySonByMother(){ // setter, atribuindo um valor ao atributo
+    public void calculatorQuantitySonByMother(){
         this.quantity = quantity / 10;
     }
 
     public String getCalculatorQuantitySonByMonther(){
-        return "Sabendo que temos 10 mães, cada mãe tem " + quantity + " filhos";
+        return "Sabendo que temos 10 mães, cada mãe tem " + this.quantity + " filhos";
     }
 }

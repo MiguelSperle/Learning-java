@@ -13,15 +13,15 @@ public abstract class Ser {
     public abstract String informacao(); // método abstract, passa a ser obrigatorio passar esse método em cada subclasse que herda essa classe abstrata
 
     public int getBornYear(){ // Pelo getter, estou pegando esse atributo
-        return bornYear;
+        return this.bornYear;
     }
 
     public int getAge(){ // Pelo getter, estou pegando esse atributo
-        return age;
+        return this.age;
     }
 
     public String getName(){ // Pelo getter, estou pegando esse atributo
-        return name;
+        return this.name;
     }
 }
 
